@@ -1,8 +1,5 @@
-package com.sbp.learnspringframework2.examples.a1;
+package com.sbp.learnspringframework2.examples.b1;
 
-import com.sbp.learnspringframework2.game.GameRunner;
-import com.sbp.learnspringframework2.game.GamingConsole;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

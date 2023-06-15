@@ -1,4 +1,4 @@
-package com.sbp.learnspringframework2.examples.a0;
+package com.sbp.learnspringframework2.examples.a1;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
