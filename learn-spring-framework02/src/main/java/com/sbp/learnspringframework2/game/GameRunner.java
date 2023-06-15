@@ -9,7 +9,7 @@ public class GameRunner {
 //    MarioGame game;
     private GamingConsole game;
 
-    public GameRunner( @Qualifier("SuperContraGame") GamingConsole game)
+    public GameRunner(  GamingConsole game)
     {
         this.game = game;
     }
