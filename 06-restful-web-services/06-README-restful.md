@@ -43,3 +43,19 @@ iii) Custom header versioning
 
 iv) Media type versioning
 
+
+Step: HATEOAS
+================
+Hypermedia As the Engine Of Application State
+
+i) Dependency:
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-hateoas</artifactId>
+</dependency>
+
+
+ii)  WebMvcLinkBuilder
+
+
+

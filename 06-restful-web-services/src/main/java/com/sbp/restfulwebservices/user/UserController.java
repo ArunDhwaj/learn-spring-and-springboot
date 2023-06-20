@@ -1,6 +1,10 @@
 package com.sbp.restfulwebservices.user;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
 import jakarta.validation.Valid;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -23,20 +27,38 @@ public class UserController {
         return service.findAll();
     }
 
+//    @GetMapping("/users/{id}")
+//    public User findUser(@PathVariable int id)
+//    {
+//        User user = service.findOne(id);
+//        if(user == null)
+//            throw new UserNotFoundException("id: " + id);
+//        return user;
+//    }
+
+    //HATEOAS implementation
     @GetMapping("/users/{id}")
-    public User findUser(@PathVariable int id)
+    public EntityModel<User> findUser(@PathVariable int id)
     {
         User user = service.findOne(id);
         if(user == null)
             throw new UserNotFoundException("id: " + id);
-        return user;
+
+        EntityModel<User> entityModel = EntityModel.of(user);
+
+        WebMvcLinkBuilder link = linkTo(methodOn(this.getClass()).retrieveAllUsers());
+        entityModel.add(link.withRel("all-users"));
+
+        return entityModel;
     }
+
 
     @DeleteMapping("/users/{id}")
     public void deleteUser(@PathVariable int id)
     {
         service.deleteById(id);
     }
+
 
     @PostMapping("/users")
     public ResponseEntity<User> createUser( @Valid @RequestBody User user)
