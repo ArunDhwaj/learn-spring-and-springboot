@@ -58,4 +58,15 @@ i) Dependency:
 ii)  WebMvcLinkBuilder
 
 
+Step: Filtering for Resr API
+=============================
 
+i) @JsonIgnore: It even work for xml format also. 
+
+ii) @JsonIgnoreProperties: It will used at class level.
+
+iii) 		
+<dependency>
+<groupId>com.fasterxml.jackson.dataformat</groupId>
+<artifactId>jackson-dataformat-xml</artifactId>
+</dependency>
