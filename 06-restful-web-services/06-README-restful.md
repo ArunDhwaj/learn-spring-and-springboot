@@ -61,6 +61,11 @@ ii)  WebMvcLinkBuilder
 Step: Filtering for Resr API
 =============================
 
+a) Static filtering,
+
+b) Dynamic filtering
+
+
 i) @JsonIgnore: It even work for xml format also. 
 
 ii) @JsonIgnoreProperties: It will used at class level.

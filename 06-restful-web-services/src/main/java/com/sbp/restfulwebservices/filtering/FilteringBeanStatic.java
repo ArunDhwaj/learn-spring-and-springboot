@@ -1,11 +1,10 @@
 package com.sbp.restfulwebservices.filtering;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 //@JsonIgnoreProperties({"field1", "field2"})
-public class FilteringBean {
+public class FilteringBeanStatic {
     private String field1;
 
     @JsonProperty("my_field2")
@@ -14,7 +13,7 @@ public class FilteringBean {
     @JsonIgnore
     private String password;
 
-    public FilteringBean(String field1, String field2, String password) {
+    public FilteringBeanStatic(String field1, String field2, String password) {
         this.field1 = field1;
         this.field2 = field2;
         this.password = password;
