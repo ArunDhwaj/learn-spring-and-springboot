@@ -20,3 +20,13 @@ i) Dependency for xml:
 <artifactId>jackson-dataformat-xml</artifactId>
 </dependency>
 
+Step: Internationalization
+==========================
+
+i) MessageSource messageSource
+
+ii) Locale
+
+iii) messages.properties
+
+iv) messages_fr.properties
