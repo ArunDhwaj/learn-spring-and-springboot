@@ -30,3 +30,16 @@ ii) Locale
 iii) messages.properties
 
 iv) messages_fr.properties
+
+
+Step: API Versioning
+==========================
+
+i) URI
+
+ii) Request params
+
+iii) Custom header versioning
+
+iv) Media type versioning
+
