@@ -112,5 +112,8 @@ ii) Dependency
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-                                                                                                                                                                    <scope>runtime</scope>
+
+iii) Learning:
+In JPA entity must create a default constructor.
+
                                                                                                                                                                 </dependency>
