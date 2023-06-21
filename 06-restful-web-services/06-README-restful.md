@@ -46,6 +46,7 @@ iv) Media type versioning
 
 Step: HATEOAS
 ================
+
 Hypermedia As the Engine Of Application State
 
 i) Dependency:
@@ -75,3 +76,41 @@ iii)
 <groupId>com.fasterxml.jackson.dataformat</groupId>
 <artifactId>jackson-dataformat-xml</artifactId>
 </dependency>
+
+
+Step: Actuator
+================
+
+Production ready metrics: It makes available all the production ready metrics.
+
+
+Step: Spring Boot HAL Explorer
+===============================
+
+i) Dependency:
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-explorer</artifactId>
+		</dependency>
+
+ii) Link:  
+http://localhost:8080/explorer/index.html#uri=/
+
+
+Step: JPA & Hibernate with H2 Database
+======================================
+
+i)In application.properties
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:testdb
+
+ii) Dependency
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+                                                                                                                                                                    <scope>runtime</scope>
+                                                                                                                                                                </dependency>

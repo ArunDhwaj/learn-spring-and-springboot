@@ -1,12 +1,21 @@
 package com.sbp.restfulwebservices.user;
 
+import jakarta.annotation.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
+@Entity(name = "user_details")
 public class User {
 
+    protected User(){}
+
+    @Id
+    @GeneratedValue
     private int id;
     @Size(min=2, message = "Name should have at least 2 characters")
     private String name;
