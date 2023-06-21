@@ -223,7 +223,9 @@ iii) Filter chains
 --------------------
 a) All requests should be authenticated
 b) If a request is not authenticated, a web page is shown
-c) CSRF -> POST, PUT
+c) Disable: CSRF -> POST, PUT
 
+d) Configuration
+e) FilterChain
 
 
