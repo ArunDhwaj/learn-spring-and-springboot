@@ -69,11 +69,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-====================================================================================================================
 
-Step: React Setup
-==================
-
-i Installation 
-
-https://linuxize.com/post/how-to-install-node-js-on-ubuntu-22-04/
