@@ -1,0 +1,33 @@
+/* .countButton{
+    font-size: 16px;
+    background-color: #00a5ab;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: black;
+} */
+
+.Counter{
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.count, .reset{
+    font-size: 150px;
+    padding: 20px;
+}
+
+.reset{
+    font-size: 16px;
+    background-color: #00ab17;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: black;
+}

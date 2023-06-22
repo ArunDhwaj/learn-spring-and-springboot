@@ -1,0 +1,20 @@
+
+/* .child {
+    display: inline-block;
+} */
+
+.CounterButton{
+    display: inline-block;
+}
+
+.actionButton{
+    font-size: 16px;
+    background-color: #00a5ab;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: black;
+}
