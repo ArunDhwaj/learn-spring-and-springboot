@@ -1,19 +1,23 @@
 import { useParams, Link } from "react-router-dom";
-import axios from 'axios';
+import { useState } from "react";
+import {retrieveHelloWorldPathVariable } from "./api/HelloWorldAPIService";
 
 
 export default function WelcomeComponent(){
 
     const params = useParams();
+    const [message, setMessage] = useState(null);
+
     function helloRest(){
-        axios.get('http://localhost:8080/hello-world')
+        retrieveHelloWorldPathVariable(params.username)
         .then( (response) => successResponse(response))
         .catch( (error) => errorResponse(error))
-        .finally(() => console.log("Cleanup"))
+        .finally(() => console.log("Cleanup"));
     }
 
     function successResponse(response){
         console.log(response);
+        setMessage(response.data.message);
     }
 
     function errorResponse(error){
@@ -28,6 +32,9 @@ export default function WelcomeComponent(){
             </div>
             <div>
                 <button className="btn btn-success m-5" onClick={helloRest}>HelloRest</button>
+            </div>
+            <div className="text-info"> 
+                {message}
             </div>
         </div>
     )
