@@ -52,20 +52,12 @@ export default function ListTodosComponent(){
         console.log("Clicked: id: " + id);
 
         navigate(`/todo/${id}`);
-        // deleteTodoApi(username, id)
-        // .then(
-        //     () => {
-        //         setMessage(`Delete of todo with id = ${id} successful`);
-        //         refreshTodos();
-        //     }
-
-        // )
-        // .catch(
-        //     error => {console.log(error);
-        //     }
-        // )
     }
 
+    function addNewTodo(id){
+        console.log("Clicked: id: " + id);
+        navigate('/todo/-1');
+    }
 
     return(
         <div className="container">
@@ -102,6 +94,10 @@ export default function ListTodosComponent(){
                     </tbody>
                 </table>
             </div>
+            <div>
+             <button className="btn btn-success m-5" onClick={()=>addNewTodo()}> Add new todo</button>
+            </div>
         </div>
     )
+
 }
