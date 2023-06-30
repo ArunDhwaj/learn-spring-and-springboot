@@ -43,6 +43,7 @@ import com.nimbusds.jose.proc.SecurityContext;
 @EnableMethodSecurity
 public class JwtSecurityConfig {
 
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity, HandlerMappingIntrospector introspector) throws Exception {
 
@@ -69,6 +70,17 @@ public class JwtSecurityConfig {
                         frameOptions().sameOrigin();})
                 .build();
     }
+
+    /*
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        return http.authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/greet").permitAll()
+                        .anyRequest().authenticated())
+                .formLogin()
+                .build();
+    }
+    */
 
     @Bean
     public AuthenticationManager authenticationManager(
