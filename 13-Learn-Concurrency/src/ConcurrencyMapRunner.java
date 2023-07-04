@@ -26,7 +26,6 @@ public class ConcurrencyMapRunner {
              longAdder.increment();
              occurances.put(character, longAdder);
          }
-
          System.out.println(occurances);
      }
 
